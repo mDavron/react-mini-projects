@@ -1,0 +1,23 @@
+.layout {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+header {
+  height: 80px;
+  background-color: black;
+  color: #fff;
+  flex: 0 1 auto;
+}
+main {
+  flex: 1 0 auto;
+}
+footer {
+  flex: 0 1 auto;
+
+  height: 80px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+}
