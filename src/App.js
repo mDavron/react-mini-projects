@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import Home from "./pages/Home";
 import Quiz from "./pages/quiz/Quiz";
@@ -11,6 +12,9 @@ import {
 } from "react-router-dom";
 
 function App() {
+  React.useEffect(() => {
+    document.title = "6-mini projects";
+  }, []);
   const routes = createBrowserRouter(
     createRoutesFromElements(
       <>
