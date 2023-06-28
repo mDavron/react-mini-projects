@@ -34,7 +34,7 @@ function Quiz() {
   const question = questions[step];
   console.log(question);
   const [correct, setCorrect] = useState(0);
-  const persenTage = Math.round((step / questions.length) * 100);
+  const persentage = Math.round((step / questions.length) * 100);
 
   const onclickVariant = (i) => {
     if (i === question.correct) {
@@ -59,14 +59,14 @@ function Quiz() {
           <Game
             question={question}
             onclickVariant={onclickVariant}
-            persenTage={persenTage}
+            persenTage={persentage}
             step={step}
           />
         ) : (
           <Result
             questions={questions}
             correct={correct}
-            persenTage={persenTage}
+            persenTage={persentage}
           />
         )}
       </div>
